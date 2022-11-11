@@ -1,0 +1,80 @@
+:focus {
+  outline: none;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  color: inherit;
+  font-family: inherit;
+  letter-spacing: inherit;
+  cursor: pointer;
+}
+
+blockquote::before,
+blockquote::after,
+q::before,
+q::after {
+  content: '';
+  content: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 400;
+  font-size: inherit;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+input {
+  color: inherit;
+  font-family: inherit;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+textarea {
+  font-family: inherit;
+  resize: none;
+}
+
+sub,
+sup {
+  position: relative;
+  vertical-align: baseline;
+  font-size: 75%;
+  line-height: 0;
+}
+
+sup {
+  top: -0.5em;
+}
+
+sub {
+  bottom: -0.25em;
+}

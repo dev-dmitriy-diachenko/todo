@@ -1,0 +1,27 @@
+@import './mixins';
+
+%container {
+  @include on-tablet {
+    max-width: 768px;
+    margin: 0 auto;
+    padding: 0 34px;
+  }
+
+  @include on-desktop {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 120px;
+  }
+
+  min-width: 320px;
+
+  // max-width: 425px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+%center-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
