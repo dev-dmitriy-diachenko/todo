@@ -29,6 +29,8 @@
   "rules": {
     "prettier/prettier": "error",
     "no-console": "warn",
+    "consistent-return": "off",
+    "no-return-await": "off",
 
     "lines-between-class-members": ["error", "always"],
     "newline-before-return": "error",
