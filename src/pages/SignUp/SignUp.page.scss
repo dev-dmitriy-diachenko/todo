@@ -1,0 +1,8 @@
+@import '../../utils/sass/extends';
+@import '../../utils/sass/variables';
+
+.sign-up-page {
+  @extend %center-div;
+
+  min-height: 92.5vh;
+}
