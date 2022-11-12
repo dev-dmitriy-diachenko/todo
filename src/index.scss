@@ -1,0 +1,12 @@
+@import './utils/sass/reset';
+@import './utils/sass/mixins';
+@import './utils/sass/extends';
+@import './utils/sass/typography';
+@import './utils/sass/variables';
+@import './utils/sass/color-palette';
+
+#root {
+  min-height: 100vh;
+  background-color: $color-bg-primary;
+  color: $color-text-primary;
+}
