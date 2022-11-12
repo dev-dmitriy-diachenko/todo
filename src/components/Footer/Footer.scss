@@ -1,0 +1,35 @@
+@import '../../utils/sass/extends';
+@import '../../utils/sass/variables';
+@import '../../utils/sass/color-palette';
+
+.footer {
+  background-color: #222;
+
+  &__container {
+    @extend %container;
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    height: 20vh;
+  }
+
+  &__links {
+    display: flex;
+    gap: 20px;
+  }
+
+  &__link {
+    border-radius: 8px;
+
+    &:focus {
+      outline: $color-link solid 3px;
+    }
+  }
+
+  &__terms {
+    text-align: center;
+  }
+}

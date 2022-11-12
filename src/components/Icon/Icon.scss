@@ -1,0 +1,39 @@
+@import '../../utils/sass/variables';
+
+.icon-container {
+  display: flex;
+  gap: 10px;
+  align-items: flex-end;
+}
+
+.icon {
+  display: block;
+  width: 32px;
+  height: 32px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: $default-transition;
+
+  &--logo {
+    width: 24px;
+    height: 24px;
+    background-image: url('../../assets/images/logo.png');
+  }
+
+  &--github {
+    background-image: url('../../assets/images/github.svg');
+
+    &:hover {
+      background-image: url('../../assets/images/github-hover.svg');
+    }
+  }
+
+  &--linkedin {
+    background-image: url('../../assets/images/linkedin.svg');
+
+    &:hover {
+      background-image: url('../../assets/images/linkedin-hover.svg');
+    }
+  }
+}

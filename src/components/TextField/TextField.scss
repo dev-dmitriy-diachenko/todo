@@ -1,0 +1,40 @@
+@import '../../utils/sass/variables';
+@import '../../utils/sass/color-palette';
+
+.text-field {
+  position: relative;
+
+  &__label {
+    position: absolute;
+    top: 10px;
+    left: 5px;
+    pointer-events: none;
+    transition: $default-transition;
+
+    &--shrink {
+      top: -14px;
+      font-size: 12px;
+    }
+  }
+
+  &__input {
+    display: block;
+    width: 100%;
+    padding: 10px 10px 10px 5px;
+    border-bottom: 1px solid $color-text-primary;
+    background: none;
+    transition: $default-transition;
+
+    &:hover,
+    &:focus {
+      border-bottom: 1px solid $color-bg-thirdly;
+    }
+
+    /* stylelint-disable-next-line selector-class-pattern */
+    &:focus ~ .text-field__label {
+      top: -14px;
+      color: $color-bg-thirdly;
+      font-size: 12px;
+    }
+  }
+}
